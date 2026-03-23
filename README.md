@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>FloorJS</h1>
+    <img src="LOGO.svg" height="200" />
 </div>
 
 ## Overview
