@@ -19,7 +19,11 @@ Can't use this beautiful service if the scripts aren't accessible! It's totally 
 <script src="/mycode.js"></script>
 ```
 
-But of course the `.d.ts` files are important. While most users won't be using TypeScript, it's always good to know what you're writing. Download the first `.d.ts` file you see next to your chosen script and place it where your IDE expects type files to go.
+But of course the `.d.ts` files are important. While most users won't be using TypeScript, it's always good to know what you're writing. Download the first `.d.ts` file you see next to your chosen script and place in a directory named `types` for example. You will be referencing where the file is (relative) in your JavaScripts like this:
+
+```javascript
+/// <reference path="./types/darklight.d.ts" />
+```
 
 ## Available scripts
 
