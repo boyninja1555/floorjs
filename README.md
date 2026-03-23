@@ -27,6 +27,7 @@ But of course the `.d.ts` files are important. While most users won't be using T
 
 ## Available scripts
 
-| Name                    | Documentation                            |
-|-------------------------|------------------------------------------|
-| Dark/Light Mode Handler | [darklight.md](./darklight/darklight.md) |
+| Name                    | Documentation                               | Status |
+|-------------------------|---------------------------------------------|--------|
+| Dark/Light Mode Handler | [darklight.md](./darklight/darklight.md)    | Stable |
+| Floorquery              | [floorquery.md](./floorquery/floorquery.md) | Beta   |
