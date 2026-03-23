@@ -19,11 +19,7 @@ Can't use this beautiful service if the scripts aren't accessible! It's totally 
 <script src="/mycode.js"></script>
 ```
 
-But of course the `.d.ts` files are important. While most users won't be using TypeScript, it's always good to know what you're writing. Include this at the top of any JavaScripts referencing FloorJS:
-
-```javascript
-/// <reference types="https://raw.githubusercontent.com/boyninja1555/floorjs/main/darklight/darklight.d.ts" />
-```
+But of course the `.d.ts` files are important. While most users won't be using TypeScript, it's always good to know what you're writing. Download the first `.d.ts` file you see next to your chosen script and place it where your IDE expects type files to go.
 
 ## Available scripts
 
