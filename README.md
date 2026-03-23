@@ -15,7 +15,7 @@ Types are not actually there for TypeScript itself. A lot of IDEs search your op
 Can't use this beautiful service if the scripts aren't accessible! It's totally fine to download whatever you need, but I always appreciate a credit giver. Plus there's an [MIT license](LICENSE.md) so you kind of have to. A safer option is to use FloorJS scripts as a CDN of sorts like below:
 
 ```html
-<script src="https://raw.githubusercontent.com/boyninja1555/floorjs/main/darklight/darklight.js"></script>
+<script src="https://boyninja1555.github.io/floorjs/darklight/darklight.js"></script>
 <script src="/mycode.js"></script>
 ```
 
