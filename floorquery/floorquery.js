@@ -5,9 +5,9 @@ window.$ = query => {
     let params = query.slice(operatorLength + 1)
     if (query[operatorLength] !== operatorEnd) throw new Error(`Attempted query without a ${operatorEnd} after the operator\n> ${query}`)
     switch (query.slice(0, operatorLength)) {
-        case "el":
+        case "el": // Gets an element by query
             return document.querySelector(params)
-        case "EL":
+        case "EL": // Gets all elements by query
             return document.querySelectorAll(params)
         case "ls": // Reads from local storage
             return localStorage.getItem(params)
