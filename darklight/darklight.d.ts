@@ -1,3 +1,4 @@
+export {}
 declare global {
     interface Window {
         getTheme(): "dark" | "light" | null
