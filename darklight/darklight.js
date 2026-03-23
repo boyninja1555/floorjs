@@ -43,7 +43,9 @@ window.saveTheme = () => {
 }
 
 const isDark = window.matchMedia("(prefers-color-scheme: dark)")
-window.setTheme(window.loadTheme() || window.setTheme(isDark.matches ? "dark" : "light"))
+const storedTheme = localStorage.getItem("floorjs--theme")
+if (storedTheme && themeClasses.includes(storedTheme)) window.setTheme(storedTheme)
+else window.setTheme(isDark.matches ? "dark" : "light")
 isDark.addEventListener("change", event => {
     window.setTheme(event.matches ? "dark" : "light")
     window.saveTheme()
