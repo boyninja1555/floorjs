@@ -2,6 +2,8 @@ export { }
 declare global {
     interface Window {
         /**
+         * ### INTERNAL HELPER
+         * 
          * Returns Error, used when a query-related problem happens. Fill in operator and params correctly for best debugging experience.
          * @param message Log message
          * @param operator Operator shown in debug section
