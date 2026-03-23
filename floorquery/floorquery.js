@@ -9,6 +9,20 @@ window.$ = query => {
             return document.querySelector(params)
         case "EL":
             return document.querySelectorAll(params)
+        case "ls": // Reads from local storage
+            return localStorage.getItem(params)
+        case "LS": // Writes to local storage
+            if (!params.includes(";")) throw new Error("LS query requires `key;value` as params")
+            const [lkey, lvalue] = params.split(";", 2)
+            localStorage.setItem(lkey, lvalue)
+            return
+        case "ss": // Reads from session storage
+            return sessionStorage.getItem(params)
+        case "SS": // Writes to session storage
+            if (!params.includes(";")) throw new Error("SS query requires `key;value` as params")
+            const [skey, svalue] = params.split(";", 2)
+            localStorage.setItem(skey, svalue)
+            return
         default:
             throw new Error(`Attempted query with invalid operator!\n> ${query}`)
     }
