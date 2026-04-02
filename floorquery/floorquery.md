@@ -1,5 +1,7 @@
 # Floorquery
 
+> **Note:** Floorquery is technically deprecated but will remain partially active. Use the modern remake on this [account](https://github.com/boyninja1555) which should work with more setups and be more organized.
+
 jQuery isn't good. At all. It focused too much on issues that were immediately fixed by major browsers. But what if there was a library just in it for the short syntax?
 
 All queries are made with 2 arguments: operator and params. Params are always controlled by the operator itself. Like the following:
