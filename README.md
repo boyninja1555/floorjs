@@ -6,7 +6,7 @@
 
 Tons of web devs use raw JavaScript everyday. Because who needs Vite or Webpack for everything? I, Floor, have made **FloorJS**, which contains small JavaScripts that do repetitive steps for you through CDN or script download.
 
-Each directory in this repository contains a `.js` file for JavaScript, `.d.ts` file for optional types (TypeScript), and a small documentation snippet inside the `.md` file.
+Each directory in this repository contains a `.js` file for the original JavaScript, a `.min.js` file for the (almost unreadable) optimized JavaScript, a `.d.ts` file for optional types (TypeScript), and a small documentation snippet inside the `.md` file.
 
 Types are not actually there for TypeScript itself. A lot of IDEs search your open directory for `.d.ts` files to autocomplete better.
 
@@ -15,7 +15,7 @@ Types are not actually there for TypeScript itself. A lot of IDEs search your op
 Can't use this beautiful service if the scripts aren't accessible! It's totally fine to download whatever you need, but I always appreciate a credit giver. Plus there's an [MIT license](LICENSE.md) so you kind of have to. A safer option is to use FloorJS scripts as a CDN of sorts like below:
 
 ```html
-<script src="https://boyninja1555.github.io/floorjs/darklight/darklight.js"></script>
+<script src="https://boyninja1555.github.io/floorjs/darklight/darklight.min.js"></script>
 <script src="/mycode.js"></script>
 ```
 
